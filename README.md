@@ -8,7 +8,7 @@ Your page will be built based on a random combination of cuisine, city, and desi
 
 ## Your team's combination: Breakfast restaurants in Las Vegas
 
-Your team has been tasked with using the Zomato API to list Breakfast restaurants in Las Vegas
+Your team has been tasked with using the Zomato API to list Breakfast restaurants in Las Vegas in the style of the Deliveroo site:
 ![Deliveroo](https://camo.githubusercontent.com/8cfee94a754c2dc45b5c2e85b24a3d9ccc727b60/68747470733a2f2f692e696d6775722e636f6d2f4748464a79316b2e706e67)
 
 ## How to complete this task

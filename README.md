@@ -1,6 +1,6 @@
 # Build a Food Review website 🌮🥑
 
-During this week we will meet-up in Sthlm – YAY! During those days we will practice our JavaScript and API skills a bit more. We will also practice working as a real team using GitHub. You will experience, first-hand, the issues and struggles that can occur when working together with code. 
+During this week we will finally have a remote collaborative session – We can't wait! During those days we will practice our JavaScript and API skills a bit more. We will also practice working as a real team using GitHub. You will experience, first-hand, the issues and struggles that can occur when working together with code. 
 
 During the session your team will be challenged to build a website that lists restaurants, reviews and information based on location – YUM 😋. 
 

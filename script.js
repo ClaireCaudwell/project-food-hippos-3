@@ -30,7 +30,8 @@ const request = new Request(requestURL, {
       ${data.restaurant.user_rating.aggregate_rating}
       ${data.restaurant.average_cost_for_two}
       ${data.restaurant.average_cost_for_two / 2}
-      ${data.restaurant.price_range}
+      ${data.restaurant.price_range} 
+      ${data.restaurant.featured_image}
 
       </li> 
       <div style="width: 100px; height: 100px; 

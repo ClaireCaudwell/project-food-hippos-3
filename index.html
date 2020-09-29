@@ -4,15 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Meet up time</title>
+    <title>Deliveroo</title>
     <link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
-    <section id="hero">
-        <h1>At the resturant</h1>
+    <header id="header" class="header">
+        <navbar>
+            <img src="" class="logo">
+            <div class="hamburgerMenu"></div>
+            <div class="hamburgerMenu"></div>
+            <div class="hamburgerMenu"></div>
+            <div class="menu">
+                <p>Menu</p>
+            </div>
+            <div class="searchIcon"></div>
+            <input type="text" name="search" id="search" class="search" placeholder="Search">
+        </navbar>
+        <img src="" class="heroImg">
+        <div>
+            <p class="title">Deliveroo</p>
+        </div>
+    </header>
+
+    <section id="filters" class="filterContainer">
+        <div id=budget class="filterRadio">
+            <p>Budget</p>
+        </div>
+        <div id="cuisine" class="filterRadio">
+            <p>Cuisine</p>
+        </div>
+        <div id="distance" class="filterRadio">
+            <p>Distance</p>
+        </div>
     </section>
-    <section class="resturant-list" id="Restaurantlist"></section>
+
+    <section id="best-restaurant" class="bestRestaurant">
+        <p>Our recommendation</p>
+        <div class="restaurantCards" id="restaurant-list"></div>
+    </section>
+
+    <section class="resturantContainer">
+        <p>Restaurant</p>
+        <div class="restaurantCards" id="restaurant-list"></div>
+        <div class="restaurantCards" id="restaurant-list"></div>
+        <div class="restaurantCards" id="restaurant-list"></div>
+        <div class="restaurantCards" id="restaurant-list"></div>
+        <div class="restaurantCards" id="restaurant-list"></div>
+        <div class="restaurantCards" id="restaurant-list"></div>
+        <div class="restaurantCards" id="restaurant-list"></div>
+        <div class="restaurantCards" id="restaurant-list"></div>
+        <div class="restaurantCards" id="restaurant-list"></div>
+        <div class="restaurantCards" id="restaurant-list"></div>
+    </section>
+
+    <footer>
+        <img src="" class="account">
+        <img src="" class="location">
+        <img src="" class="favorites">
+        <p>Project by Claire, Anna, Sabina and Lili at Technigo</p>
+    </footer>
+
     <script src="./script.js"></script>
 </body>
 </html>

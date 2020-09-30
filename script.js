@@ -9,6 +9,9 @@ const request = new Request(requestURL, {
       'user-key': `${API_KEY}` 
     })
   });
+// Added new variable const containerRestaurant.
+// Changed restaurantAddress to containerRestaurant in the forEach.
+  const containerRestaurant = document.getElementById('restaurant-container');
 
 // Using a new request to fetch data. The new request includes API-key (user-key) and url (requestURL).
   fetch(request) 
@@ -18,7 +21,7 @@ const request = new Request(requestURL, {
     console.log(json); // prints array to console
       //json.restaurants.forEach(data => { // loops over each item in the array.      
       json.restaurants.forEach((data) => {
-        restaurantAddress.innerHTML += generateHTMLForForecast(data);
+        containerRestaurant.innerHTML += generateHTMLForForecast(data);
       });
     });
       

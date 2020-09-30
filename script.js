@@ -59,7 +59,7 @@ const request = new Request(requestURL, {
     createRestaurantHTML += `<div class="restaurant-container">`;
     createRestaurantHTML += `<p>${restName}</p>`;
     createRestaurantHTML += `<p>${restAddress}</p>`;
-    createRestaurantHTML += `<p>${restImage}</p>`;
+    createRestaurantHTML += `<img src="${restImage}">`;
     createRestaurantHTML += `<p>${rating}</p>`;
     createRestaurantHTML += `<p>${averageCost}</p>`;
     createRestaurantHTML += `</div>`;

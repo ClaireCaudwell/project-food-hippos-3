@@ -21,8 +21,9 @@ const request = new Request(requestURL, {
     console.log(json); // prints array to console
     json.restaurants.forEach(data => { // loops over each item in the array.
       console.log(data.restaurant.name); // returns and prints the array's names to the console.
-      document.getElementById("restaurants").innerHTML += //fetches, returns and outputs specified features from the API in html.
+      document.getElementById("restaurant-list").innerHTML += //fetches, returns and outputs specified features from the API in html.
       `<li>
+
       ${data.restaurant.name}
       ${data.restaurant.location.address} 
       ${data.restaurant.cuisines} 
@@ -36,10 +37,16 @@ const request = new Request(requestURL, {
       </li> 
       <div style="width: 100px; height: 100px; 
       })" </div>`;
+
     });
   });
 
-  console.log(data.restaurant);
+  restaurant-container.innerHTML += 
+
+
+  
+
+  //console.log()
 
   /*const getsPlaceholderImage = () => {
     const featuredImage = data.restaurant.featured_image;

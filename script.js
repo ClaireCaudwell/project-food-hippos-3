@@ -35,11 +35,11 @@ const request = new Request(requestURL, {
     // And creates HTML code that is returned
     let createRestaurantHTML = '';
     createRestaurantHTML += `<div class="restaurant-container">`;
-    createRestaurantHTML += `<p id="restaurantName">${restName}</p>`;
+    createRestaurantHTML += `<p class="rest-name" id="restaurantName">${restName}</p>`;
     createRestaurantHTML += `<p class="rest-address">${restAddress}</p>`;
-    createRestaurantHTML += `<img src="${restImage}" id="restaurantImage="rest-img">`;
-    createRestaurantHTML += `<p id="rating">${rating}</p>`;
-    createRestaurantHTML += `<p id="averageCost">${averageCost}</p>`;
+    createRestaurantHTML += `<img src="${restImage}" class="rest-img">`;
+    createRestaurantHTML += `<p class="rest-rating" id="rating">${rating}</p>`;
+    createRestaurantHTML += `<p class="ave-cost" id="averageCost">${averageCost}</p>`;
     createRestaurantHTML += `</div>`;
     return createRestaurantHTML
   };

@@ -1,1 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+margin: 0;
+display: flex;
+flex-direction: column;
+font-family: 'Spartan', sans-serif;
+}
+
+/* HEADER AREA */
+.heroImage{
+background-image: linear-gradient(rgba(253, 246, 246, 0.5), rgba(170, 165, 165, 0.5)), url("brunch.jpg");
+height: 100%;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 100px 10px;
+}
+
+.header {
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;     
+}
+
+.hamburgerMenu {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    order: 1;
+}
+
+.hamburgerMenu div {
+    height: 4px;
+    width: 40px;
+    border-radius: 5px;
+    background: #f6af01;
+}
+
+.menu {
+    display: none;
+}
+
+.title {
+    order: 2;
+    color: #ffffff;
+    font-size: 30px;
+    margin: auto;
+    background: #f6af01;
+    border-radius: 2px;
+    padding: 20px 10px;
+}
+
+.searchContainer {
+    order: 3;
+}
+
+.searchContainer i {
+    margin: 2px;
+}
+
+.searchContainer input {
+    display: none;
+}
+
+/* FILTER AREA */
+.filterContainer {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto 10px auto;
+}
+
+.filterRadio p {
+    display: none;
+}
+
+/* BEST RESTAURANT AREA */
+.bestRestaurant {
+    background: #F7B300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+/* RESTAURANT AREA */
+.restaurant-title {
+    text-align: center;
+}
+
+.resturantContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurantCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background: #F1F2F6;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #F7B300;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+
+    .resturantContainer {
+        flex-direction: row;
+        flex-wrap: wrap;        
+    }
+
+    .restaurantCards {
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    .restaurantCards {
+        width: 30%;
+    }
+}
+
 

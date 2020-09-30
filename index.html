@@ -3,60 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Deliveroo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>HUNGRY?</title>
     <link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
     <header id="header" class="header">
-        <navbar>
-            <img src="" class="logo">
-            <div class="hamburgerMenu"></div>
-            <div class="hamburgerMenu"></div>
-            <div class="hamburgerMenu"></div>
-            <div class="menu">
-                <p>Menu</p>
-            </div>
-            <div class="searchIcon"></div>
+        <div class="hamburgerMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav class="menu">
+            <a href="#">ORDER</a>
+            <a href="#">ACCOUNT</a>
+            <a href="#">CONTACT</a>
+        </nav>
+
+        <div class="searchContainer">
+            <i class="fa fa-search" aria-hidden="true" style="font-size:20px;color:#f6af01;"></i>
             <input type="text" name="search" id="search" class="search" placeholder="Search">
-        </navbar>
-        <img src="" class="heroImg">
-        <div>
-            <p class="title">Deliveroo</p>
         </div>
     </header>
+    <div class="heroImage"> 
+        <div class="title"> <p>HUNGRY?</p></div>     
+    </div> 
 
-    <section id="filters" class="filterContainer">
-        <div id=budget class="filterRadio">
-            <p>Budget</p>
-        </div>
-        <div id="cuisine" class="filterRadio">
-            <p>Cuisine</p>
-        </div>
-        <div id="distance" class="filterRadio">
-            <p>Distance</p>
-        </div>
-    </section>
+    <main class="main-container">
+        <section id="filters" class="filterContainer">
+            <div id=budget class="filterRadio">
+                <img src="./chef-hat.png" width="40x40">
+                <p>Cuisine</p>
+            </div>
+            <div id="cuisine" class="filterRadio">
+                <img src="./dollar.png" width="40x40">
+                <p>Budget</p>
+            </div>
+            <div id="distance" class="filterRadio">
+                <img src="./distance.png" width="40x40">
+                <p>Distance</p>
+            </div>
+        </section>
 
-    <section id="best-restaurant" class="bestRestaurant">
-        <p>Our recommendation</p>
-        <div class="restaurantCards" id="restaurant-list"></div>
-    </section>
+        <div>
+        <section id="best-restaurant" class="bestRestaurant">
+            <h3>Best restaurant near you</h3>
+            <div class="restaurantCards" id="restaurant-list">
+                <h4 id="restaurantName">Restaurant name</h4>
+                <img id="restaurantImage" src="" alt="Image of restaurant">
+                <p id="restaurantAddress">Address</p>
+                <p id="averageCost">Average cost for dinner</p>
+                <p id="rating">Raiting</p>
+            </div>
+        </section>
 
-    <section class="resturantContainer">
-        <p>Restaurant</p>
-        <div class="restaurantCards" id="restaurant-list"></div>
-        <div class="restaurantCards" id="restaurant-list"></div>
-        <div class="restaurantCards" id="restaurant-list"></div>
-        <div class="restaurantCards" id="restaurant-list"></div>
-        <div class="restaurantCards" id="restaurant-list"></div>
-        <div class="restaurantCards" id="restaurant-list"></div>
-        <div class="restaurantCards" id="restaurant-list"></div>
-        <div class="restaurantCards" id="restaurant-list"></div>
-        <div class="restaurantCards" id="restaurant-list"></div>
-        <div class="restaurantCards" id="restaurant-list"></div>
-    </section>
+        <div class="restaurant-title">
+            <h3> Other restaurants near you</h3>
+        </div>
+        <section id="restaurant-container" class="resturantContainer">        
+            <div class="restaurantCards" id="restaurant-list">
+                <h4 id="restaurantName">Restaurant name</h4>
+                <img id="restaurantImage" src="" alt="Image of restaurant">
+                <p id="restaurantAddress">Address</p>
+                <p id="averageCost">Average cost for dinner</p>
+                <p id="raiting">Raiting</p>
+            </div>          
+        </section>
+    </main>
 
     <footer>
         <img src="" class="account">

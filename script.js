@@ -19,9 +19,14 @@ const request = new Request(requestURL, {
     .then(json => {
 
     console.log(json); // prints array to console
-    json.restaurants.forEach(data => { // loops over each item in the array.
-      console.log(data.restaurant.name); // returns and prints the array's names to the console.
-      document.getElementById("restaurant-list").innerHTML += //fetches, returns and outputs specified features from the API in html.
+    //json.restaurants.forEach(data => { // loops over each item in the array.
+      //console.log(data.restaurant.name); // returns and prints the array's names to the console.
+      
+      json.restaurants.forEach((data) => {
+        restaurantAddress.innerHTML += generateHTMLForForecast(data);
+      });
+    });
+      /*document.getElementById("restaurant-list").innerHTML += //fetches, returns and outputs specified features from the API in html.
       `<li>
 
       ${data.restaurant.name}
@@ -37,13 +42,29 @@ const request = new Request(requestURL, {
       </li> 
       <div style="width: 100px; height: 100px; 
       })" </div>`;
-
-    });
-  });
-
-  restaurant-container.innerHTML += 
+*/
+    
 
 
+  const generateHTMLForForecast = data => {
+    const restName = data.restaurant.name;
+    const restAddress = data.restaurant.location.address;
+    const restImage = data.restaurant.featured_image;
+    const rating = data.restaurant.user_rating.aggregate_rating;
+    const averageCost = data.restaurant.average_cost_for_two / 2;
+ 
+
+    // And creates HTML code that is returned
+    let createRestaurantHTML = '';
+    createRestaurantHTML += `<div class="restaurant-container">`;
+    createRestaurantHTML += `<p>${restName}</p>`;
+    createRestaurantHTML += `<p>${restAddress}</p>`;
+    createRestaurantHTML += `<p>${restImage}</p>`;
+    createRestaurantHTML += `<p>${rating}</p>`;
+    createRestaurantHTML += `<p>${averageCost}</p>`;
+    createRestaurantHTML += `</div>`;
+    return createRestaurantHTML
+  };
   
 
   //console.log()

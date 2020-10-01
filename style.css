@@ -223,5 +223,9 @@ footer p {
     .restaurant-cards {
         width: 32%;
     }
+
+    .rest-address{
+        padding: 0 10px;
+    }
 }
 

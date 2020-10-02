@@ -32,7 +32,7 @@ header {
     height: 4px;
     width: 40px;
     border-radius: 5px;
-    background: #f6af01;
+    background: rgb(246, 175, 1);
 }
 
 .navbar-menu {
@@ -41,10 +41,10 @@ header {
 
 .title {
     order: 2;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     margin: auto;
-    background: #f6af01;
+    background:rgb(246, 175, 1);
     border-radius: 2px;
     padding: 20px 10px;
 }
@@ -64,7 +64,8 @@ header {
 
 .magnify-icon {
     font-size:30px;
-    color:#f6af01
+    color:rgb(246, 175, 1);
+;
 }
 
 .search-container {
@@ -81,8 +82,8 @@ main {
     align-items: center;
 }
 
-/* FILTER AREA */
-.filter-container {
+/* SORT AREA */
+.sort-container {
     display:flex;
     align-items: center;
     justify-content: space-around;
@@ -91,8 +92,85 @@ main {
     width: 100%;
 }
 
-.filter-radio p {
+.sort-child-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .radio-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+.radio-button-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin: 10px 5px;
+    font-size: 16px;
+    user-select: none; 
+}
+
+.radio-button-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 3px solid #f9cb4e;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.radio-button-container:hover input ~ .custom-radio {
+    background-color:#f9cb4e;
+  }
+  
+.radio-button-container input:checked ~ .custom-radio {
+    background-color:#fff;
+}
+
+.custom-radio:after {
+    content:"";
+    position: absolute;
+    top: 2px;
+    left: 2px; 
+    width: 8px;
+    height: 8px;
+    background-color: #f9cb4e;
+    border-radius: 50%;
     display: none;
+}
+
+.radio-button-container input:checked ~ .custom-radio:after {
+    display: block;
+} */
+
+.button {
+    border: none;
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    background:  rgb(255, 255, 255);
+}
+
+.button:hover {
+   background:rgb(220, 222, 228);
 }
 
 /* BEST RESTAURANT AREA */
@@ -110,8 +188,8 @@ main {
     text-align: center;
     margin: 10px 0px;
     padding: 15px;
-    background: #f6af01;
-    color: #fff;
+    background: rgb(246, 175, 1);
+    color:  rgb(255, 255, 255);
     font-size: 22px;
     width: 100%;
 }
@@ -129,7 +207,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 90%;
-    background:#dcdee4;  
+    background:rgb(220, 222, 228);  
     margin: 10px auto;
     padding: 10px;
     border-radius: 2px;
@@ -137,7 +215,7 @@ main {
 
 .restaurant-details {
     text-align: center;
-    background: #fff;
+    background:  rgb(255, 255, 255);
     border-radius: 2px;
     margin: 10px 0px;
     height: 100%;
@@ -145,7 +223,7 @@ main {
 }
 
 .rest-name {
-    color: #f6af01;
+    color: rgb(246, 175, 1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,7 +232,7 @@ main {
     margin: auto;
     height: 70px;
     width: 230px;   
-    border-bottom: 2px solid #f6af01; 
+    border-bottom: 2px solid rgb(246, 175, 1);
 }
 
 .rest-address {
@@ -175,13 +253,13 @@ main {
 
 /* FOOTER */
 footer {
-    background: #F7B300;
+    background: rgb(246, 175, 1);;
     padding: 5px;
     text-align: center;
 }
 
 footer p {
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 @media (min-width: 728px) {
@@ -194,12 +272,12 @@ footer p {
         text-decoration: none;
         margin-right: 5px;
         padding: 10px;
-        color:#F7B300;
+        color:rgb(246, 175, 1);
         border-radius: 2px;
     }
 
     .navbar-menu a:hover {
-        border-bottom: 2px solid #F7B300;
+        border-bottom: 2px solid rgb(246, 175, 1);
     }
 
     .hamburger-menu {

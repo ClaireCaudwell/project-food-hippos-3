@@ -33,26 +33,52 @@
     </div> 
 
     <main class="main-container">
-        <section id="filters" class="filter-container">
-            <div id="budget" class="filter-radio">
-                <img src="./chef-hat.png" width="40x40">
-                <p>Cuisine</p>
+        <section class="sort-container">
+            <div id="cuisine" class="sort-child-container">
+                <img src="./chef-hat.png" width="40px">                
             </div>
-            <div id="cuisine" class="filter-radio">
-                <img src="./dollar.png" width="40x40">
-                <p>Budget</p>
+
+            <div id="price" class="sort-child-container">
+                <img src="./dollar.png" width="40px">
+                <!-- <div id="radioContainer" class="radio-button-row">
+                    <label class="radio-button-container">
+                        <input type="radio" id="lowPrice" class="custom-radio">
+                        <b>$</b>
+                        <span class="custom-radio"></span>
+                    </label>
+                    <label class="radio-button-container">
+                        <input type="radio" id="medPrice" class="custom-radio">
+                        <b>$$</b>
+                        <span class="custom-radio"></span>
+                    </label>
+                    <label class="radio-button-container">
+                        <input type="radio" id="highPrice" class="custom-radio">
+                        <b>$$$</b>
+                        <span class="custom-radio"></span>
+                    </label>
+                </div> -->
             </div>
-            <div id="distance" class="filter-radio">
-                <img src="./distance.png" width="40x40">
-                <p>Distance</p>
+
+            <div id="distance" class="sort-child-container">
+                <img src="./distance.png" width="40px">
             </div>
         </section>
 
         <section class="restaurant-title">
             <p>Brunch restaurants near you in Seattle, WA</p>
+            <div class="button-container" id="containerButton"> 
+                <button class="button" id="topRatings">Top Rated</button> 
+                <!-- <button class="restart-button" id="restart-button" onclick="restart()">Clear Search</button> -->
+                <button class="button" id="restart-button" onclick="reloadButton()">Clear Search</button>
+            </div>
         </section>
 
-        <section class="restaurant-container" id="restaurantContainer"></section>
+        <section class="restaurant-container" id="restaurantContainer">           
+        <section>
+        <section class="restaurant-container" id="sortRestaurant"><section>
+
+    
+
     </main>
 
     <footer>

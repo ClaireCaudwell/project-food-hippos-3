@@ -14,8 +14,8 @@ template.
 
 # How we approached the project
 1. We first came up with a plan of what we needed to achieve.
-2. We then created some of the basic HTML structure and created te main fetch() from the Zomato API based on the requirements. 
-3. The we divided up into smaller teams where one focused on creating the javascript elements and the other on the CSS aspects.
+2. We then created some of the basic HTML structure and created te main fetch() from the 🍅 Zomato API based on the requirements. 
+3. The we divided up into smaller teams where one focused on creating the javascript elements and the other on the CSS aspects. We created sepereate branches to work in.
 4. We had constant contact with one another incase we needed to ask questions. 
 5. On day two we had a stand up where we went over what we achieved since the day before, what we had left to do in our
 respective teams and what we needed help with from the others in the team.

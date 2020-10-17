@@ -1,4 +1,4 @@
-# Project ood Review website 🌮🥑
+# Project food Review website 🌮🥑
 As a team we were tasked to build a food review website that lists several Brunch restaurants in the Seattle, WA, area. 
 It was to be completed over two days and demoed to a smaller group within the bootcamp. Furthermore the project was expected to 
 help us practice our JavaScript and API fetching skills and for us to experience working together as a team 💪
